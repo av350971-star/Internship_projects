@@ -1,6 +1,7 @@
 """
 FastAPI entrypoint.
 Run with: uvicorn main:app --reload --port 5001
+CORS configured for 3000, 5173, and Vercel.
 """
 import os
 from app import app

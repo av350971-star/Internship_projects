@@ -29,7 +29,7 @@ def read_page(url: str, max_chars: int = 3000) -> dict[str, str]:
             - 'title': extracted page title
     """
     try:
-        with httpx.Client(headers=DEFAULT_HEADERS, timeout=8.0, follow_redirects=True, verify=False) as client:
+        with httpx.Client(headers=DEFAULT_HEADERS, timeout=4.0, follow_redirects=True, verify=False) as client:
             resp = client.get(url)
             resp.raise_for_status()
             html = resp.text
