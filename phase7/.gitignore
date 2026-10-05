@@ -1,0 +1,26 @@
+# Root gitignore for Phase 7
+
+# Environment variables & secrets (CRITICAL)
+**/.env
+**/.env.local
+**/.env.*.local
+
+# Python
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/.venv/
+**/env/
+**/venv/
+
+# Node / Frontend
+**/node_modules/
+**/dist/
+**/build/
+**/.vite/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

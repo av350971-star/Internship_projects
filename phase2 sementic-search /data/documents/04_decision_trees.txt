@@ -1,0 +1,4 @@
+Decision Tree Induction and Splitting Criteria
+Decision trees are non-parametric supervised learning models that predict target values by learning simple recursive decision rules inferred from data features. The internal nodes represent tests on feature attributes, branches represent outcomes of the tests, and terminal leaf nodes represent class labels or continuous predictions.
+At each node, the tree algorithm greedily selects the feature and threshold that achieves the purest split. For classification, split purity is measured using impurity metrics such as Shannon Entropy, Information Gain, or the Gini Impurity index.
+Decision trees are inherently interpretable and can handle both numerical and categorical data without feature scaling. However, deep unconstrained decision trees suffer from high variance and are prone to severe overfitting on noisy training data, requiring pre-pruning or post-pruning techniques.

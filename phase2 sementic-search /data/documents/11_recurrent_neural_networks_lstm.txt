@@ -1,0 +1,4 @@
+Recurrent Neural Networks and Long Short-Term Memory
+Recurrent Neural Networks (RNNs) are designed to process sequential data, such as natural language sentences, time series measurements, and audio signals, by maintaining an internal recurrent hidden state vector that acts as memory across discrete time steps.
+At each step t, the hidden state is updated using both the current input x_t and the previous hidden state h_{t-1}. However, standard vanilla RNNs suffer from vanishing and exploding gradients when trained with Backpropagation Through Time (BPTT) over long temporal horizons.
+Long Short-Term Memory (LSTM) networks resolve this limitation through an internal cell state regulated by three specialized multiplicative gates: the forget gate, the input gate, and the output gate, allowing gradients to flow uninterrupted over hundreds of sequence tokens.

@@ -1,0 +1,4 @@
+ROC Curves and Area Under the Curve (AUC)
+The Receiver Operating Characteristic (ROC) curve is a graphical evaluation tool that illustrates the diagnostic performance of a binary classifier across all possible classification decision thresholds.
+The curve plots the True Positive Rate (Sensitivity) on the vertical y-axis against the False Positive Rate (1 - Specificity) on the horizontal x-axis as the probability threshold varies from 0 to 1.
+The Area Under the ROC Curve (AUC-ROC) summarizes the curve into a single scalar value between 0.0 and 1.0. An AUC of 0.5 represents a worthless classifier equivalent to random coin tossing, while an AUC of 1.0 indicates perfect class separation. AUC is scale-invariant and classification-threshold-invariant, making it a robust metric for comparing probabilistic classification algorithms.

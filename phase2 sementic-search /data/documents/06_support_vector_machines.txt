@@ -1,0 +1,4 @@
+Support Vector Machines and the Kernel Trick
+Support Vector Machines (SVM) are maximum-margin classifiers that identify the optimal separating hyperplane which maximizes the geometric margin between data points of opposing classes. The data instances lying directly on the margin boundaries are known as support vectors, and they alone dictate the position and orientation of the decision boundary.
+When datasets are not linearly separable in their original input space, SVMs leverage the kernel trick. The kernel function computes dot products in a high-dimensional implicit feature space without explicitly mapping the data coordinates, maintaining computational tractability.
+Common kernel functions include the Radial Basis Function (RBF) Gaussian kernel, polynomial kernels, and sigmoid kernels. Soft-margin SVMs introduce slack variables and a regularization hyperparameter C to balance margin width against training constraint violations.

@@ -1,0 +1,4 @@
+Artificial Neural Networks and Backpropagation
+Artificial Neural Networks (ANN) are biologically inspired computational architectures composed of interconnected processing units called artificial neurons organized into input, hidden, and output layers. Each neuron computes a weighted sum of its inputs, adds a bias term, and applies a non-linear activation function such as ReLU, GeLU, or Sigmoid.
+Training multi-layer neural networks relies on the backpropagation algorithm, which systematically applies the mathematical chain rule of calculus to compute partial derivatives of the scalar loss function with respect to every weight and bias parameter.
+These computed gradients are then used by optimization algorithms like Stochastic Gradient Descent (SGD), Adam, or RMSprop to iteratively update network weights in the direction of steepest descent, minimizing the loss over training epochs.

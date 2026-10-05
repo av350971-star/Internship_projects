@@ -1,0 +1,11 @@
+[
+  {
+    "email_id": "EMAIL-24626",
+    "mode": "MOCK EMAIL - SIMULATION ONLY",
+    "to": "alice@example.com",
+    "subject": "Important update on your inquiry",
+    "body": "Thank you for reaching out to customer support.",
+    "sent_at": "2026-09-24T18:05:03.668544+00:00",
+    "status": "delivered_to_mock_inbox"
+  }
+]

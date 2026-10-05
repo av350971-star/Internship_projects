@@ -1,0 +1,4 @@
+Semantic Search Engine Architecture and Dense Retrieval
+Semantic search engines transcend lexical keyword matching (such as BM25 or TF-IDF) by understanding the conceptual intent and contextual meaning of user queries and documents.
+In a modern dense retrieval pipeline without generative synthesis, the system operates in two core phases: offline indexing and online query retrieval. During offline indexing, source documents are segmented into clean chunks, passed through a pre-trained bi-encoder embedding model (such as all-MiniLM-L6-v2), and stored along with metadata in a vector database.
+During online retrieval, the user's query string is converted on the fly into an embedding vector using the identical bi-encoder model. The vector database performs top-k similarity search, returning the most semantically relevant text passages, their cosine similarity scores, source document identifiers, and chunk positions for inspection.

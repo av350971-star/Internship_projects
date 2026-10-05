@@ -1,0 +1,4 @@
+Unsupervised Learning and K-Means Clustering
+Unsupervised learning discovers latent patterns, groupings, and underlying distributions in unlabeled datasets where no supervisory target feedback is provided.
+K-Means clustering is a partition-based clustering algorithm that groups n observations into k distinct non-overlapping clusters. The algorithm begins by initializing k cluster centroids, assigns each observation to its closest centroid using Euclidean distance, and recalculates the centroids as the arithmetic mean of all points assigned to that cluster.
+This two-step expectation-maximization cycle repeats until centroid positions stabilize and within-cluster sum of squares (inertia) converges. Finding the optimal number of clusters k is commonly evaluated using the Elbow Method, Silhouette Analysis, or the Davies-Bouldin index.

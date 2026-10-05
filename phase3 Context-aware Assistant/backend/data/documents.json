@@ -1,0 +1,74 @@
+[
+  {
+    "id": "DOC-CUST-001",
+    "title": "ShopNexus Return & Refund Policy (Public)",
+    "category": "Customer Support",
+    "allowed_roles": ["customer", "support_agent"],
+    "tags": ["return", "refund", "money", "policy", "window", "exchange"],
+    "summary": "Standard customer return window of 7 days and 3-5 day refund timeline.",
+    "content": "Customers can return items within 7 days of delivery if the item is unused, in original packaging, and has all tags attached. Refunds are processed within 3 to 5 business days back to the original payment method after the returned product passes quality inspection at our warehouse. Cash on Delivery (COD) orders are refunded via direct bank transfer or store credit."
+  },
+  {
+    "id": "DOC-CUST-002",
+    "title": "Shipping Timelines & Order Tracking (Public)",
+    "category": "Customer Support",
+    "allowed_roles": ["customer", "support_agent"],
+    "tags": ["shipping", "tracking", "delivery", "carrier", "delay", "time"],
+    "summary": "Standard delivery 3-5 business days; Express delivery 1-2 days.",
+    "content": "Standard shipping takes 3-5 business days across major cities and 5-7 business days for regional areas. Express shipping guarantees delivery within 1-2 business days. Tracking links are activated within 24 hours of dispatch. Customers can track their packages directly in the 'My Orders' section of the ShopNexus website or mobile app."
+  },
+  {
+    "id": "DOC-CUST-003",
+    "title": "Damaged Item & Warranty Claim Process (Public)",
+    "category": "Customer Support",
+    "allowed_roles": ["customer", "support_agent"],
+    "tags": ["damaged", "broken", "warranty", "claim", "defective", "repair"],
+    "summary": "Report damaged items within 48 hours with unboxing photos/video.",
+    "content": "If you receive a damaged or defective item, you must report it within 48 hours of delivery. Please submit clear photos of the damaged item along with the shipping box and label via the Help Center. Brand warranties vary from 6 months to 2 years and can be claimed directly at authorized service centers with your ShopNexus digital tax invoice."
+  },
+  {
+    "id": "DOC-CUST-004",
+    "title": "Order Cancellation & Address Modification (Public)",
+    "category": "Customer Support",
+    "allowed_roles": ["customer", "support_agent"],
+    "tags": ["cancel", "address", "modify", "change", "order", "status"],
+    "summary": "Orders can be cancelled or address edited only before package is dispatched.",
+    "content": "Orders can be cancelled instantly free of charge before the status changes to 'Dispatched'. Delivery address modifications can be requested within 2 hours of placing the order by tapping 'Edit Delivery Address' in your order details. Once the shipment has been dispatched with the carrier, route changes are no longer supported."
+  },
+  {
+    "id": "DOC-AGENT-001",
+    "title": "Internal Runbook: Refund Override Codes & Discretionary Credit (RESTRICTED)",
+    "category": "Internal Operations",
+    "allowed_roles": ["support_agent"],
+    "tags": ["override", "code", "discretionary", "refund", "compensation", "agent", "auth"],
+    "summary": "Internal override authorization code AUTH-OVERRIDE-88 for agent discretionary credits up to $100.",
+    "content": "CONFIDENTIAL INTERNAL SOP-801: Support agents are authorized to issue immediate discretionary refunds or store credit up to $100 for severe courier delays exceeding 10 business days or damaged goods where pickup is unfeasible. Use Override Authorization Code: [AUTH-OVERRIDE-88] in the Admin CRM portal. Any refund over $100 requires Team Lead approval using code [TL-AUTH-449]. NEVER disclose these internal codes to end customers."
+  },
+  {
+    "id": "DOC-AGENT-002",
+    "title": "Internal Runbook: Tier-2 Escalation Matrix & Direct Extensions (RESTRICTED)",
+    "category": "Internal Operations",
+    "allowed_roles": ["support_agent"],
+    "tags": ["escalation", "tier2", "supervisor", "hotline", "matrix", "lead", "contact"],
+    "summary": "Emergency escalation contacts: Slack #ops-emergency and direct dial ext 4402.",
+    "content": "CONFIDENTIAL INTERNAL SOP-404: If an issue cannot be resolved within 15 minutes of chat interaction or involves legal threats / executive escalation, reassign the ticket to the 'Tier-2 Critical Response' queue. Internal Slack channel: #ops-emergency. On-call duty supervisor hotline: Extension 4402 (PIN: 9012). Logistics dispatch team direct email: logistics-urgent@shopnexus.internal."
+  },
+  {
+    "id": "DOC-AGENT-003",
+    "title": "Internal Runbook: Fraud & Abusive Return Detection Checklist (RESTRICTED)",
+    "category": "Internal Operations",
+    "allowed_roles": ["support_agent"],
+    "tags": ["fraud", "suspicious", "abuse", "return", "flag", "blacklist", "check"],
+    "summary": "Tag accounts with FLAG-SUSPICIOUS-RETURN if return rate > 40% or 3 consecutive claims.",
+    "content": "CONFIDENTIAL INTERNAL SOP-902: Before processing manual replacements or zero-return refunds, inspect the customer's 6-month transaction history in CRM. Trigger criteria: (1) More than 3 return claims in 30 days, or (2) Total return value exceeds 40% of lifetime spend. If triggers are met, do NOT issue an instant refund. Apply system tag [FLAG-SUSPICIOUS-RETURN] and route ticket to the Loss Prevention Department."
+  },
+  {
+    "id": "DOC-AGENT-004",
+    "title": "Internal Runbook: Carrier Webhook Retry & Tracking Sync (RESTRICTED)",
+    "category": "Internal Operations",
+    "allowed_roles": ["support_agent"],
+    "tags": ["tracking", "stuck", "webhook", "carrier", "sync", "api", "admin"],
+    "summary": "Troubleshooting SOP for tracking stuck on 'Label Created' > 48 hours.",
+    "content": "CONFIDENTIAL INTERNAL SOP-112: When customers report tracking stuck at 'Shipping Label Created' for > 48 hours, navigate to Admin Console > Carrier Hub > select tracking ID > click 'Force Webhook Resync'. If carrier returns error code 503, the warehouse manifest was delayed. Manually re-route package dispatch via secondary carrier queue 'FEDEX-PRIORITY-RESCAN'."
+  }
+]

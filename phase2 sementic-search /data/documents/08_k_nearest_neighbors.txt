@@ -1,0 +1,4 @@
+K-Nearest Neighbors Algorithm and Metric Spaces
+K-Nearest Neighbors (KNN) is an instance-based, non-parametric, lazy learning algorithm that defers all generalization computation until query time. During inference, KNN identifies the k training instances geographically closest to an unseen query vector according to a distance metric.
+Common distance metrics include Euclidean distance for continuous real vectors, Manhattan distance for grid-like spaces, and Minkowski distance as a generalized formulation. Once the k nearest neighbors are located, classification is performed via majority vote among their labels, often weighted inversely by distance.
+KNN requires zero training time since the entire dataset serves as the model. However, inference latency scales linearly with dataset size unless spatial acceleration structures like KD-trees or Ball trees are employed. KNN is also highly sensitive to irrelevant features and the curse of dimensionality.

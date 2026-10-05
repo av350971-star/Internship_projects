@@ -1,0 +1,4 @@
+Vector Databases and Approximate Nearest Neighbor Search
+Vector databases are specialized storage and retrieval engines engineered to persist, index, and query millions to billions of high-dimensional vector embeddings with millisecond latency.
+Unlike traditional relational databases that execute exact matches on structured scalar columns, vector databases solve the Nearest Neighbor Search problem in metric vector spaces using distance metrics such as Cosine Distance, Euclidean Distance (L2), or Dot Product.
+To avoid exhaustive brute-force linear scans across massive vector collections, vector databases implement Approximate Nearest Neighbor (ANN) indexing graphs, such as Hierarchical Navigable Small World (HNSW) and Inverted File Index with Product Quantization (IVF-PQ). ChromaDB is an open-source AI-native vector database designed to seamlessly store embeddings, document chunks, and structured metadata.

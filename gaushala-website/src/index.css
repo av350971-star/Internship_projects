@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-brown-800 font-sans antialiased;
+  }
+
+  /* Tailwind auto-generates the `.font-display` utility class from
+     fontFamily.display in tailwind.config.js, so components using
+     className="font-display" already work without any rule here.
+     This just makes h1/h2/h3 use the display font by default, without
+     re-declaring (and thus circularly @apply-ing) `.font-display` itself. */
+  h1,
+  h2,
+  h3 {
+    @apply font-display;
+  }
+
+  /* Consistent, visible keyboard focus across the site */
+  :focus-visible {
+    outline: 2px solid theme("colors.pasture.500");
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}
+
+@layer utilities {
+  .container-page {
+    @apply mx-auto w-full max-w-8xl px-4 sm:px-6 lg:px-8;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,11 @@
+streamlit
+chromadb
+sentence-transformers
+pandas
+python-dotenv
+requests
+streamlit
+chromadb
+pandas
+python-dotenv
+requests

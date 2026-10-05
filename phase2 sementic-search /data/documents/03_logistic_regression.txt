@@ -1,0 +1,4 @@
+Logistic Regression and Probabilistic Modeling
+Logistic regression is a fundamental linear classification algorithm used to estimate the probability that an observation belongs to a specific class. Despite its name containing regression, it is strictly used for classification.
+The model applies the standard linear combination of input features weighted by learned parameters, and passes the resulting real-valued score through the sigmoid or logistic activation function. The sigmoid function squashes any real number into the bounded open interval between 0 and 1, allowing the output to be interpreted as a posterior class probability.
+Optimization in logistic regression is achieved by minimizing the binary cross-entropy loss function, also known as negative log-likelihood, using gradient descent or second-order optimization techniques such as L-BFGS. Unlike linear regression, logistic regression has no closed-form analytical solution.

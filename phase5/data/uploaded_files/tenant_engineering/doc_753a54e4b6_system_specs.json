@@ -1,0 +1,30 @@
+{
+  "system_infrastructure": {
+    "cluster_name": "prod-k8s-cluster-01",
+    "kubernetes_namespace": "prod-services",
+    "worker_nodes": 5,
+    "docker_container": {
+      "base_image": "python:3.11-slim",
+      "exposed_port": 8080,
+      "working_directory": "/app",
+      "memory_requests": "2Gi",
+      "memory_limits": "4Gi",
+      "cpu_requests": "1000m",
+      "cpu_limits": "2000m"
+    },
+    "database_configuration": {
+      "engine": "PostgreSQL",
+      "version": "16.2",
+      "min_pool_connections": 5,
+      "max_pool_connections": 20,
+      "idle_timeout_seconds": 30,
+      "ssl_mode": "require"
+    },
+    "load_balancer": {
+      "type": "Application Load Balancer",
+      "ssl_certificate": "arn:aws:acm:us-east-1:123456789012:certificate/abc-987",
+      "idle_timeout": 60,
+      "health_check_interval": 15
+    }
+  }
+}

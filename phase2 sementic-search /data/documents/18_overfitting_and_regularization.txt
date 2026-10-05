@@ -1,0 +1,4 @@
+Overfitting Prevention and Regularization Techniques
+Overfitting occurs when a machine learning model learns spurious noise and idiosyncrasies in the training data rather than the underlying generalizable data generation process, resulting in near-zero training error but high test generalization error.
+Regularization encompasses techniques designed to constrain model complexity. In linear and logistic models, L2 regularization (Ridge) adds the sum of squared weights to the loss function, shrinking weights toward zero and dampening extreme values. L1 regularization (Lasso) adds the sum of absolute weight values, driving unimportant weights strictly to zero and performing automatic feature selection.
+In deep neural networks, common regularization methods include Dropout (randomly zeroing neuron activations during forward passes), early stopping based on validation loss, and data augmentation to artificially expand training variety.

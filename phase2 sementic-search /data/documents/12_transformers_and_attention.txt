@@ -1,0 +1,4 @@
+Transformer Architecture and Multi-Head Self-Attention
+The Transformer architecture, introduced in 'Attention Is All You Need', revolutionized natural language processing by replacing recurrent temporal recurrence entirely with self-attention mechanisms. This enables complete parallelization of sequence processing during model training.
+The core self-attention computation operates on Query (Q), Key (K), and Value (V) matrices projected from input embeddings. The scaled dot-product attention formula computes attention weights by taking the dot product of Q and K, dividing by the square root of the key dimension d_k, applying the Softmax function, and multiplying the result by V.
+Multi-Head Attention divides the projections into multiple representation subspaces, allowing the model to attend simultaneously to syntactic, semantic, and positional contexts. Positional encodings are added to input embeddings to preserve sequence order.

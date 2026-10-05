@@ -1,0 +1,4 @@
+Dimensionality Reduction and Principal Component Analysis
+High-dimensional datasets frequently suffer from the curse of dimensionality, where data points become sparse, distances lose discriminative power, and model training becomes computationally prohibitive. Dimensionality reduction compresses features into lower-dimensional manifolds while preserving maximal informational variance.
+Principal Component Analysis (PCA) is an orthogonal linear transformation technique that projects data onto new uncorrelated axes called principal components.
+PCA first centers the data matrix, computes the empirical covariance matrix, and calculates its eigenvectors and eigenvalues. The eigenvectors determine the directions of maximal variance, while corresponding eigenvalues quantify the magnitude of variance captured. Selecting the top k eigenvectors yields a compressed representation ideal for data visualization, noise filtering, and downstream modeling.

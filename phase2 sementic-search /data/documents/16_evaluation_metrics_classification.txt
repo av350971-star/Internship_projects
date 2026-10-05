@@ -1,0 +1,4 @@
+Evaluation Metrics for Classification Systems
+Evaluating classification performance requires metrics tailored to the problem distribution and relative cost of errors. Relying solely on raw classification accuracy can be profoundly misleading, especially in the presence of severe class imbalance.
+A confusion matrix records True Positives (TP), True Negatives (TN), False Positives (FP), and False Negatives (FN). Precision measures the fraction of positive predictions that are truly correct (TP / (TP + FP)), critical in scenarios like spam filtering where false alarms carry high penalties.
+Recall (or Sensitivity) measures the proportion of actual positives that the model successfully captured (TP / (TP + FN)), essential in medical diagnosis where missed cases are catastrophic. The F1-score provides the harmonic mean of precision and recall, balancing both metrics into a single unified benchmark.

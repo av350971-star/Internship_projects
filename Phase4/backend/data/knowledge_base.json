@@ -1,0 +1,44 @@
+[
+  {
+    "id": "KB-101",
+    "title": "Refund Policy",
+    "category": "billing",
+    "tags": ["refund", "money", "return", "policy"],
+    "content": "Our refund policy allows customers to request a full refund within 30 days of purchase for unused items in their original packaging. Refunds are processed back to the original payment method within 3-5 business days after inspection. Digital products and gift cards are non-refundable."
+  },
+  {
+    "id": "KB-102",
+    "title": "Shipping and Delivery Timelines",
+    "category": "shipping",
+    "tags": ["shipping", "delivery", "carrier", "tracking"],
+    "content": "Standard domestic shipping takes 3-5 business days. Express shipping takes 1-2 business days. International shipping takes 7-14 business days depending on customs clearance. Orders over 2,000 INR qualify for free standard shipping."
+  },
+  {
+    "id": "KB-103",
+    "title": "Return and Exchange Process",
+    "category": "returns",
+    "tags": ["return", "exchange", "label", "damaged"],
+    "content": "To return an item, initiate a return request through your customer dashboard or contact a support agent. A prepaid shipping label will be generated for defective or damaged items. Exchanges are processed immediately upon carrier receipt."
+  },
+  {
+    "id": "KB-104",
+    "title": "Warranty and Hardware Support",
+    "category": "support",
+    "tags": ["warranty", "repair", "hardware", "replacement"],
+    "content": "All hardware products carry a 1-year limited manufacturer warranty covering component defects and workmanship failure. The warranty does not cover accidental water damage, unauthorized repairs, or normal wear and tear."
+  },
+  {
+    "id": "KB-105",
+    "title": "Order Cancellation Policy",
+    "category": "billing",
+    "tags": ["cancel", "order", "modification"],
+    "content": "Orders can be canceled free of charge within 1 hour of placement. Once an order enters the 'processing' or 'packed' warehouse stage, it cannot be canceled directly; customers must instead initiate a return upon delivery."
+  },
+  {
+    "id": "KB-106",
+    "title": "Account Security and Privacy",
+    "category": "security",
+    "tags": ["account", "password", "security", "privacy"],
+    "content": "We support two-factor authentication (2FA) via authenticator apps. Customer support representatives will never ask for your password. If you suspect unauthorized access, contact the security team immediately to lock the account."
+  }
+]

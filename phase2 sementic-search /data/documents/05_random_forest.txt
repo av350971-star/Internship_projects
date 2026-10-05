@@ -1,0 +1,4 @@
+Random Forest Ensemble and Bagging Architecture
+Random Forest is an ensemble learning method that constructs a multitude of decorrelated decision trees during training and aggregates their individual predictions to produce a more robust and accurate output. For classification tasks, the aggregate output is determined by majority voting.
+Random Forest implements bootstrap aggregating, or bagging, where each constituent tree is trained on a distinct bootstrap sample drawn with replacement from the original dataset. Furthermore, at each split within a tree, only a random subset of input features is considered rather than the full feature space.
+This dual randomness decorrelates individual trees, dramatically reducing model variance without significantly increasing bias. Random forests also provide out-of-bag (OOB) error estimation and feature importance rankings based on mean decrease in impurity.

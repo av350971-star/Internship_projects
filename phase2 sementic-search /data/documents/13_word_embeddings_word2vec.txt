@@ -1,0 +1,4 @@
+Word Embeddings and Semantic Vector Spaces
+Word embeddings are dense, low-dimensional continuous vector representations of words where semantically similar words map to geometrically close coordinates in an embedding vector space. This represents a monumental leap over traditional high-dimensional sparse one-hot encodings.
+Pioneered by Word2Vec, algorithms learn embeddings by exploiting the distributional hypothesis: words that occur in similar linguistic contexts tend to have similar meanings. Word2Vec features two core architectures: Continuous Bag of Words (CBOW), which predicts a target word from surrounding context words, and Skip-Gram, which predicts context words given a central target word.
+In these continuous vector spaces, semantic relationships manifest as linear vector arithmetic, famously exemplified by vector('King') - vector('Man') + vector('Woman') yielding a vector strikingly close to vector('Queen').

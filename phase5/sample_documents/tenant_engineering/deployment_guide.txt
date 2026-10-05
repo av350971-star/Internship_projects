@@ -1,0 +1,25 @@
+Production Deployment and CI/CD Operational Runbook
+
+1. CI/CD Pipeline Automation:
+- Automated builds trigger on every commit pushed to the main branch via GitHub Actions.
+- The pipeline executes automated unit tests, runs static type checks with mypy, and builds the container image.
+- Build artifacts are tagged with the Git commit SHA and pushed to Amazon ECR.
+
+2. Rolling Update Deployment:
+- Kubernetes deployments execute zero-downtime rolling updates.
+- Strategy settings: maxSurge is configured to 25%, and maxUnavailable is strictly 0%.
+- Health checks are continuously monitored:
+  * Liveness probe queries endpoint /healthz every 10 seconds.
+  * Readiness probe queries endpoint /ready every 5 seconds before traffic routing.
+
+3. Emergency Rollback Procedure:
+- If error rate exceeds 1% following a deployment, trigger an immediate rollback.
+- Rollback command:
+  kubectl rollout undo deployment/api-server -n prod-services
+- Verify rollout status:
+  kubectl rollout status deployment/api-server -n prod-services
+
+4. Database Migrations:
+- Database schema migrations are executed using Alembic before updating pods.
+- Run command: alembic upgrade head
+- If migration fails, the pipeline halts immediately without updating worker pods.

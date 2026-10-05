@@ -1,0 +1,21 @@
+Company Employee Handbook & Workplace Guidelines
+
+1. Working Hours & Attendance:
+- Official office hours are from 9:00 AM to 6:00 PM IST, Monday through Friday.
+- Core collaboration hours are 11:00 AM to 4:00 PM, during which all team members must be reachable on Slack.
+- Employees are permitted up to 2 days per week of remote work with prior notification to their reporting manager.
+
+2. Probationary Period:
+- New joiners undergo a standard probationary period of 3 months from their joining date.
+- A formal probation review meeting is scheduled during the 10th week.
+- If performance is unsatisfactory or below expectations during probation, the probation period may be extended or employment terminated.
+- Upon successful completion, the employee receives a formal confirmation letter.
+
+3. Company Hardware & Equipment:
+- Full-time employees are provided with either an Apple MacBook Pro or a Lenovo ThinkPad based on team requirements.
+- Hardware refreshes and upgrades are eligible every 3 years.
+- Lost or damaged accessories must be reported immediately to the IT Helpdesk within 24 hours.
+
+4. Code of Conduct:
+- Equal opportunity employer with zero tolerance for discrimination or harassment.
+- All proprietary source code, internal discussions, and customer data are confidential under the signed NDA.
