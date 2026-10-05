@@ -45,7 +45,13 @@ class Settings(BaseSettings):
     HOST: str = Field(default="0.0.0.0", description="FastAPI host (0.0.0.0 for cloud/docker)")
     PORT: int = Field(default=5001, description="FastAPI port")
     CORS_ORIGINS: Union[list[str], str] = Field(
-        default=["http://localhost:5173", "http://localhost:3000", "http://127.0.0.1:5173", "http://127.0.0.1:3000", "*"],
+        default=[
+            "http://localhost:5173",
+            "http://127.0.0.1:5173",
+            "http://localhost:3000",
+            "http://127.0.0.1:3000",
+            "https://researchagent-phi.vercel.app",
+        ],
         description="Allowed CORS origins"
     )
 
@@ -56,10 +62,12 @@ class Settings(BaseSettings):
             if v.startswith("[") and v.endswith("]"):
                 import json
                 try:
-                    return json.loads(v)
+                    return [x.strip().rstrip("/") for x in json.loads(v) if x.strip()]
                 except Exception:
                     pass
-            return [x.strip() for x in v.split(",") if x.strip()]
+            return [x.strip().rstrip("/") for x in v.split(",") if x.strip()]
+        if isinstance(v, list):
+            return [x.strip().rstrip("/") for x in v if isinstance(x, str) and x.strip()]
         return v
 
     model_config = SettingsConfigDict(
